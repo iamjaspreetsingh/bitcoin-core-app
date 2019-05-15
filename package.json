@@ -1,52 +1,25 @@
 {
-  "name": "bitcoincoreapp",
-  "version": "1.0.0",
-  "description": "app for bitcoin core commands",
-  "main": "index.js",
+  "name": "HelloWorld",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.dev.config.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iamjaspreetsingh/bitcoin-core-app.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "babel": {
-    "presets": [
-      "es2015",
-      "react",
-      "stage-0"
-    ],
-    "plugins": [
-      "transform-object-rest-spread"
-    ]
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
   },
   "dependencies": {
-    "bitcoin-core": "^2.0.0",
-    "css-loader": "^0.28.5",
-    "less-loader": "^4.0.5",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-redux": "^5.0.6",
-    "react-router-dom": "^4.2.2",
-    "react-router-redux": "^4.0.8",
-    "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0",
-    "style-loader": "^0.18.2",
-    "webpack": "^3.5.5"
+    "axios": "^0.18.0",
+    "react": "16.8.3",
+    "react-native": "0.59.8"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "babel-register": "^6.26.0",
-    "less": "^2.7.2",
-    "webpack-dev-server": "^2.7.1"
+    "@babel/core": "^7.4.4",
+    "@babel/runtime": "^7.4.4",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0",
+    "metro-react-native-babel-preset": "^0.54.1",
+    "react-test-renderer": "16.8.3"
+  },
+  "jest": {
+    "preset": "react-native"
   }
 }
